@@ -1,0 +1,19 @@
+{    
+     "type":"oracle",
+     "host":"localhost",
+     "port": 1521,
+     "username":"system",
+     "password":"123",
+     "database":"SYSTEM",
+     "synchronize": true,
+     "logging": false,
+     "migrations": [
+          "./src/database/migrations/*.ts"
+     ],
+     "entities": [
+          "./src/models/*.ts"
+     ],
+     "cli":{
+          "migrationsDir": "./src/database/migrations"
+     }
+}
